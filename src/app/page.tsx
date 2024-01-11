@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Nav } from "@/components/nav"
+import { Projects } from "@/components/projects"
 import { Techs } from "@/components/tecnologies"
 
 const Page = ()=> {
@@ -8,6 +9,7 @@ const Page = ()=> {
       <Nav/>
       <Header/>
       <Techs/>
+      <Projects/>
     </div>
   )
 }

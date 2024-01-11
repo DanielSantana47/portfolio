@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
 export type TechBoxType = {
-    icon: ReactNode,
-    label: string
+    icon: string,
+    label: string,
 }

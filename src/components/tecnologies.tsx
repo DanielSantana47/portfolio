@@ -8,16 +8,20 @@ import { SiTailwindcss } from "react-icons/si";
 
 export const Techs = ()=> {
     return(
-        <section className="w-creen h-screen px-20 flex justify-center">
-            <div className="grid grid-cols-3 w-full h-full items-center justify-center text-9xl">
-                <TechBox icon={<FaHtml5/>} label="HTML"/>
-                <TechBox icon={<FaCss3Alt/>} label="CSS"/>
-                <TechBox icon={<IoLogoJavascript />} label="Javascript"/>
-                <TechBox icon={<SiTypescript />} label="Typescript"/>
-                <TechBox icon={<FaReact />} label="React Ts"/>
-                <TechBox icon={<SiTailwindcss/>} label="Tailwind CSS"/>
+        <section id="technologies" className="w-creen h-full px-20 flex flex-col justify-center mb-20 pt-16">
+            <div className="mb-20">
+                <h1 className="text-7xl inline-block pb-6 font-bold">Tecnologias</h1>
+                <div className="w-52 border-b-4 border-primary"></div>
+            </div>
+            <div className="grid gap-8 grid-cols-3 w-full h-full items-center justify-center text-9xl">
+                <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} label="HTML"/>
+                <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} label="CSS"/>
+                <TechBox icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'} label="Javascript"/>
+                <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"} label="Typescript"/>
+                <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"} label="React Ts"/>
+                <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"} label="Tailwind CSS"/>
                 <div className="col-span-3">
-                    <TechBox icon={<img className="w-32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />} label="Next Js"/>
+                    <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"} label="Next Js"/>
                 </div>
             </div>
         </section>
