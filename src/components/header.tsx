@@ -2,7 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 export const Header = ()=> {
     return(
-        <header id="header" className="w-screen h-screen px-20">
+        <header id="header" className="w-screen h-screen px-52">
             <div className="w-full h-full flex flex-col justify-center">
                 <span className="text-primary font-bold text-xl">Olá, sou Daniel</span>
                 <h1 className="text-8xl font-bold mt-4 max-w-[50vw]">Desenvolvedor Front-End</h1>

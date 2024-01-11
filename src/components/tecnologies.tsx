@@ -5,15 +5,13 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
+import { Title } from "./title";
 
 export const Techs = ()=> {
     return(
-        <section id="technologies" className="w-creen h-full px-20 flex flex-col justify-center mb-20 pt-16">
-            <div className="mb-20">
-                <h1 className="text-7xl inline-block pb-6 font-bold">Tecnologias</h1>
-                <div className="w-52 border-b-4 border-primary"></div>
-            </div>
-            <div className="grid gap-8 grid-cols-3 w-full h-full items-center justify-center text-9xl">
+        <section id="technologies" className="w-creen h-full px-52 flex flex-col justify-center mb-20 pt-16">
+            <Title label="Tecnologias"/>            
+            <div className="grid gap-8 grid-cols-3 w-full h-full items-center justify-center text-9xl mt-20">
                 <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"} label="HTML"/>
                 <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"} label="CSS"/>
                 <TechBox icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'} label="Javascript"/>
