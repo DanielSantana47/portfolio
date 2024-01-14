@@ -1,16 +1,12 @@
 import { TechBox } from "./techBox"
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
-import { FaReact } from "react-icons/fa6";
-import { SiTailwindcss } from "react-icons/si";
 import { Title } from "./title";
-import { useCallback, useContext } from "react";
+import { useContext, useRef } from "react";
 import { DarkMode } from "@/context/darkMode";
+import { useInView } from "framer-motion";
 
 export const Techs = ()=> {
     const darkModeCtx = useContext(DarkMode)
+    
     return(
         <section id="technologies" className="w-creen h-full p-5 flex flex-col justify-center items-center mb-20 pt-16">
             <div className="max-w-[1450px] w-full flex flex-col justify-start">

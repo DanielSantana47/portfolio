@@ -8,7 +8,7 @@ import { IoMdClose } from "react-icons/io";
 
 export const Nav = ()=> {
     const darkModeCtx = useContext(DarkMode)
-    const [openMenu, setOpenMenu] = useState(true)
+    const [openMenu, setOpenMenu] = useState(false)
     
     return(
         <nav className={`w-screen h-12 sm:h-16 fixed flex items-center justify-center px-5 ${darkModeCtx?.darkMode == true ? 'bg-zinc-100 text-black' : 'bg-zinc-900 text-white shadow-zinc-700'} flex justify-between items-center z-50 shadow-sm transition-all duration-300`}>

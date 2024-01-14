@@ -1,12 +1,22 @@
 import { DarkMode } from "@/context/darkMode"
 import { ProjectType } from "@/types/project"
-import { useContext } from "react"
+import { useInView } from "framer-motion"
+import { useContext, useRef } from "react"
 
 export const Project1 = ({body,src,title,site,code,blockCode}:ProjectType)=> {
     const darkModeCtx = useContext(DarkMode)
+    const ref = useRef(null)
+    const isInView = useInView(ref, {once: false})
 
     return(
-        <div className={`w-full h-full flex justify-center gap-6 p-6 ${darkModeCtx?.darkMode == true ? 'bg-zinc-200' : 'bg-zinc-700'} rounded-xl shadow-xl transition-all duration-300`}>
+        <div
+        ref={ref}
+            style={{
+            transform: isInView ? "none" : "translatey(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)"
+            }}
+        className={`w-full h-full flex justify-center gap-6 p-6 ${darkModeCtx?.darkMode == true ? 'bg-zinc-200' : 'bg-zinc-700'} rounded-xl shadow-xl transition-all duration-300`}>
                 
                 <div className="flex-1 p-6">
                     <h3 className="text-5xl font-semibold mb-8">{title}</h3>

@@ -1,12 +1,22 @@
 import { DarkMode } from "@/context/darkMode"
 import { ProjectType } from "@/types/project"
-import { useContext } from "react"
-import { TechBox } from "./techBox"
+import { useInView } from "framer-motion"
+import { useContext, useRef } from "react"
 
 export const Project2 = ({body,src,title,site,code,blockCode}:ProjectType)=> {
     const darkModeCtx = useContext(DarkMode)
+    const ref = useRef(null)
+    const isInView = useInView(ref, {once: false})
+
     return(
-        <div className={`w-full h-full flex xl:flex-row flex-col justify-center gap-6 p-3 md:p-6 ${darkModeCtx?.darkMode == true ? 'bg-zinc-200' : 'bg-zinc-700'} rounded-xl shadow-xl transition-all duration-300`}>
+        <div 
+        ref={ref}
+        style={{
+        transform: isInView ? "none" : "translatey(200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)"
+        }}
+        className={`w-full h-full flex xl:flex-row flex-col justify-center gap-6 p-3 md:p-6 ${darkModeCtx?.darkMode == true ? 'bg-zinc-200' : 'bg-zinc-700'} rounded-xl shadow-xl transition-all duration-300`}>
                 <a href={site} target="_blank" className={`flex-1 flex items-center rounded-xl overflow-hidden`}>
                     <img src={src} alt="" className={` h-full border ${darkModeCtx?.darkMode == true ? 'border-zinc-400' : 'border-transparent'} object-left object-cover transition-all duration-500 rounded-xl`}/>
                 </a>
