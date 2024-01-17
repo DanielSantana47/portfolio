@@ -21,12 +21,12 @@ export const Header = ()=> {
             className="max-w-[1450px] w-full h-full flex flex-col justify-center">
                 <span className="text-primary font-bold text-lg sm:text-xl lg:text-2xl">Olá, sou Daniel</span>
                 <h1 className="text-4xl sm:text-7xl md:text-8xl font-bold mt-4 lg:max-w-[50vw] max-w-max">Desenvolvedor <br/>Front-End</h1>
-                <p className="lg:max-w-[50vw] max-w-max mt-8 lg:text-lg md:text-md text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p className="xl:max-w-[50vw] max-w-max mt-8 lg:text-lg md:text-md text-sm font-light">Minha verdadeira paixão é a criação de interfaces amigáveis e funcionais. Estou comprometido em aprimorar minhas habilidades, mantendo-me atualizado com as últimas tendências no desenvolvimento web. Estou empolgado para contribuir em projetos desafiadores, aplicando tanto meu conhecimento acadêmico quanto prático para criar experiências de usuário excepcionais. Atualmente estudo Universidade Federal Rural de Pernambuco (UFRPE) e realizo trbalhos freelancer. </p>
                 <div className="text-4xl md:text-6xl mt-12 flex md:gap-14 gap-6">
                     <a href="https://github.com/DanielSantana47" target="_blank" className="hover:scale-125 transition-all duration-300 hover:text-primary">
                         <FaGithub />
                     </a>
-                    <a href="" className="hover:scale-125 transition-all duration-300 hover:text-primary">
+                    <a href="https://www.linkedin.com/in/daniel-santana-5647792aa/" target="_blank" className="hover:scale-125 transition-all duration-300 hover:text-primary">
                         <FaLinkedin />
                     </a>
                 </div>

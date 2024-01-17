@@ -47,7 +47,7 @@ export const Contact = ()=> {
                 <div className="mt-20 h-full justify-center lg:flex hidden">
                     <div className="flex mb-10 lg:mb-0 lg:flex-col justify-center gap-12 text-primary flex-1">
                         <ContactIcon link="https://wa.me/5581987778016" icon={<FaWhatsapp className='hover:scale-125 transition-all duration-300'/>}/>
-                        <ContactIcon link="" icon={<FaLinkedin className='hover:scale-125 transition-all duration-300'/>}/>
+                        <ContactIcon link="https://www.linkedin.com/in/daniel-santana-5647792aa/" icon={<FaLinkedin className='hover:scale-125 transition-all duration-300'/>}/>
                         <ContactIcon link="mailto:danielsantanachastel@hotmail.com" icon={<SiGmail className='hover:scale-125 transition-all duration-300'/>}/>
                         <ContactIcon link="tel:+5581987778016" icon={<FaPhoneSquareAlt className='hover:scale-125 transition-all duration-300'/>}/>
                     </div>
@@ -129,7 +129,7 @@ export const Contact = ()=> {
                     </form>
                     <div className="flex mt-10 lg:flex-col justify-center gap-6 sm:gap-10 text-primary flex-1">
                         <ContactIcon link="https://wa.me/5581987778016" icon={<FaWhatsapp className='hover:scale-125 transition-all duration-300'/>}/>
-                        <ContactIcon link="" icon={<FaLinkedin className='hover:scale-125 transition-all duration-300'/>}/>
+                        <ContactIcon link="https://www.linkedin.com/in/daniel-santana-5647792aa/" icon={<FaLinkedin className='hover:scale-125 transition-all duration-300'/>}/>
                         <ContactIcon link="mailto:danielsantanachastel@hotmail.com" icon={<SiGmail className='hover:scale-125 transition-all duration-300'/>}/>
                         <ContactIcon link="tel:+5581987778016" icon={<FaPhoneSquareAlt className='hover:scale-125 transition-all duration-300'/>}/>
                     </div>
