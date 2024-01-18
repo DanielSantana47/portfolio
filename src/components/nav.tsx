@@ -35,7 +35,7 @@ export const Nav = ()=> {
                     <div onClick={()=> setOpenMenu(true)} className="flex sm:hidden text-xl">
                         <RiMenu3Fill />
                     </div>
-                        <div className={`fixed flex items-end flex-col sm:hidden left-0 right-0 top-0 bottom-0 ${openMenu == true ? 'translate-x-0' : '-translate-x-[100vw]'}  ${darkModeCtx.darkMode == true ? 'bg-zinc-200 text-black' : 'bg-zinc-800 text-white'} transition-all duration-500`}>
+                        <div className={`fixed flex items-end flex-col sm:hidden left-0 right-0 top-0 bottom-0 ${openMenu == true ? 'translate-x-0' : '-translate-x-[100vw]'}  ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-zinc-200 text-black' : 'bg-zinc-800 text-white'} transition-all duration-500`}>
                             <div onClick={()=> setOpenMenu(false)} className="">
                                 <IoMdClose className="m-2 text-3xl"/>
                             </div>
