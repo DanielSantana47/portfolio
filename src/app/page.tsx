@@ -11,7 +11,7 @@ import { useContext } from "react"
 const Page = ()=> {
   const darkModeCtx = useContext(DarkMode)
   return(
-    <div className={`overflow-x-hidden ${darkModeCtx?.darkMode == true ? 'bg-zinc-100 text-black' : 'bg-zinc-900 text-white'} transition-all duration-300`}>
+    <div className={`overflow-x-hidden ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-zinc-100 text-black' : 'bg-zinc-900 text-white'} transition-all duration-300`}>
       <Nav/>
       <Header/>
       <Techs/>

@@ -7,8 +7,8 @@ export type Props = {
     setDarkMode: (n: boolean)=> void
 }
 
-export const DarkMode = createContext<Props | null>(null)
 
+export const DarkMode = createContext<Props | null>(null)
 export const DarkModeProvider = ({children}: {children: ReactNode})=> {
     const [darkMode, setDarkMode] = useState(true)
 

@@ -59,7 +59,7 @@ export const Contact = ()=> {
                         className="flex gap-8">
                             <input 
                             type="text" 
-                            className={`flex-1 rounded-lg px-4 py-3 text-xl ${darkModeCtx?.darkMode == true ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary hover:border hover:border-primary focus:border-primary outline-none transition-all duration-500`}
+                            className={`flex-1 rounded-lg px-4 py-3 text-xl ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary hover:border hover:border-primary focus:border-primary outline-none transition-all duration-500`}
                             placeholder="Digite seu nome..."
                             onChange={(e)=>setName(e.target.value)}
                             value={name}
@@ -67,7 +67,7 @@ export const Contact = ()=> {
                             
                             <input
                             type="email"
-                            className={`flex-1 rounded-lg px-4 py-3 text-xl ${darkModeCtx?.darkMode == true ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary hover:border hover:border-primary focus:border-primary outline-none transition-all duration-500`}
+                            className={`flex-1 rounded-lg px-4 py-3 text-xl ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary hover:border hover:border-primary focus:border-primary outline-none transition-all duration-500`}
                             placeholder="Digite seu Gmail..."
                             onChange={(e)=>setEmail(e.target.value)}
                             value={email}
@@ -75,7 +75,7 @@ export const Contact = ()=> {
                         </div>
                         <textarea
                         name="" 
-                        className={`h-full rounded-lg resize-none px-4 py-3 text-xl ${darkModeCtx?.darkMode == true ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary focus:border hover:border-primary focus:border-primary outline-none transition-all duration-500`}
+                        className={`h-full rounded-lg resize-none px-4 py-3 text-xl ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary focus:border hover:border-primary focus:border-primary outline-none transition-all duration-500`}
                         placeholder="Digite seu texto..."
                         onChange={(e)=>setMessage(e.target.value)}
                         value={message}
@@ -83,7 +83,7 @@ export const Contact = ()=> {
                             
                         </textarea>
                         <div className="flex justify-center mb-8">
-                            <input type="submit" className={`${darkModeCtx?.darkMode == true ? 'bg-zinc-800 text-white' : 'bg-zinc-200 text-black hover:text-white'} font-semibold w-40 py-3 rounded-lg shadow-lg hover:bg-primary hover:shadow-xl hover:scale-105 transition-all duration-300`}/>
+                            <input type="submit" className={`${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-zinc-800 text-white' : 'bg-zinc-200 text-black hover:text-white'} font-semibold w-40 py-3 rounded-lg shadow-lg hover:bg-primary hover:shadow-xl hover:scale-105 transition-all duration-300`}/>
                         </div>
                     </form>
                 </div>
@@ -103,7 +103,7 @@ export const Contact = ()=> {
                         <div className="flex flex-col gap-4">
                             <input 
                             type="text" 
-                            className={`flex-1 rounded-lg px-4 py-3 text-sm sm:text-xl ${darkModeCtx?.darkMode == true ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary hover:border hover:border-primary focus:border-primary outline-none transition-all duration-500`} 
+                            className={`flex-1 rounded-lg px-4 py-3 text-sm sm:text-xl ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary hover:border hover:border-primary focus:border-primary outline-none transition-all duration-500`} 
                             placeholder="Digite seu nome..."
                             onChange={(e)=>setName(e.target.value)}
                             value={name}
@@ -111,20 +111,20 @@ export const Contact = ()=> {
 
                             <input 
                             type="email" 
-                            className={`flex-1 rounded-lg px-4 py-3 text-sm sm:text-xl ${darkModeCtx?.darkMode == true ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary hover:border hover:border-primary focus:border-primary outline-none transition-all duration-500`} 
+                            className={`flex-1 rounded-lg px-4 py-3 text-sm sm:text-xl ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary hover:border hover:border-primary focus:border-primary outline-none transition-all duration-500`} 
                             placeholder="Digite seu Gmail..."
                             onChange={(e)=>setEmail(e.target.value)}
                             value={email}
                             />
                         </div>
                         <textarea 
-                        className={`h-full rounded-lg resize-none px-4 py-3 text-sm sm:text-xl ${darkModeCtx?.darkMode == true ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary focus:border hover:border-primary focus:border-primary outline-none transition-all duration-500`} 
+                        className={`h-full rounded-lg resize-none px-4 py-3 text-sm sm:text-xl ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-white' : 'bg-zinc-700 border-zinc-600 text-white'} border border-zinc-200 text-primary focus:border hover:border-primary focus:border-primary outline-none transition-all duration-500`} 
                         placeholder="Digite seu texto..."
                         onChange={(e)=>setMessage(e.target.value)}
                         value={message}
                         ></textarea>
                         <div className="flex justify-center mb-8">
-                            <input type="submit" className={`${darkModeCtx?.darkMode == true ? 'bg-zinc-800 text-white' : 'bg-zinc-200 text-black hover:text-white'} font-semibold w-40 py-3 rounded-lg shadow-lg hover:bg-primary hover:shadow-xl hover:scale-105 transition-all duration-300`}/>
+                            <input type="submit" className={`${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-zinc-800 text-white' : 'bg-zinc-200 text-black hover:text-white'} font-semibold w-40 py-3 rounded-lg shadow-lg hover:bg-primary hover:shadow-xl hover:scale-105 transition-all duration-300`}/>
                         </div>
                     </form>
                     <div className="flex mt-10 lg:flex-col justify-center gap-6 sm:gap-10 text-primary flex-1">

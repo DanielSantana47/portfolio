@@ -11,7 +11,7 @@ export const Nav = ()=> {
     const [openMenu, setOpenMenu] = useState(false)
     
     return(
-        <nav className={`w-screen h-12 sm:h-16 fixed flex items-center justify-center px-5 ${darkModeCtx?.darkMode == true ? 'bg-zinc-100 text-black' : 'bg-zinc-900 text-white shadow-zinc-700'} flex justify-between items-center z-50 shadow-sm transition-all duration-300`}>
+        <nav className={`w-screen h-12 sm:h-16 fixed flex items-center justify-center px-5 ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-zinc-100 text-black' : 'bg-zinc-900 text-white shadow-zinc-700'} flex justify-between items-center z-50 shadow-sm transition-all duration-300`}>
             <div className="max-w-[1450px] w-full h-full flex justify-center items-center mx-auto">
                 <div className="w-full h-full flex justify-between items-center">
                     <a href="#header">
@@ -24,10 +24,10 @@ export const Nav = ()=> {
                         <a href="#contact" className="hover:text-primary hover:pb-4 transition-all duration-300">Contato</a>
                     </ul>
                     <div onClick={()=>darkModeCtx?.setDarkMode(!darkModeCtx.darkMode)}>
-                        {darkModeCtx?.darkMode == true && 
+                        {darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null && 
                             <FaMoon className="text-2xl sm:text-3xl hover:text-primary hover:-rotate-90 transition-all duration-300 cursor-pointer"/>
                         }
-                        {darkModeCtx?.darkMode == false && 
+                        {darkModeCtx?.darkMode == false && darkModeCtx.darkMode !== null && 
                             <IoSunny className="text-2xl sm:text-3xl hover:text-primary hover:-rotate-90 transition-all duration-300 cursor-pointer"/>
                         }
                     </div>
