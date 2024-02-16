@@ -24,7 +24,7 @@ export const Project1 = ({body,src,title,site,code,blockCode}:ProjectType)=> {
                     <div className="flex gap-8 mb-6">
                         <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
                         <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>
-                        <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"/>
+                        <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"/>
                         <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"/>
                     </div>
                     <div className="flex gap-8 mb-10">
