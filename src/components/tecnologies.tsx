@@ -17,7 +17,7 @@ export const Techs = ()=> {
                     <TechBox icon={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'} label="Javascript"/>
                     <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"} label="Typescript"/>
                     <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"} label="React"/>
-                    <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"} label="Tailwind CSS"/>
+                    <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"} label="Tailwind CSS"/>
                     {darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null && 
                         <div className="lg:col-span-3">
                             <TechBox icon={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"} label="Next"/>
