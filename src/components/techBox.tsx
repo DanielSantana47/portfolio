@@ -14,7 +14,7 @@ export const TechBox = ({icon, label}: TechBoxType)=> {
             style={{
             transform: isInView ? "none" : "translatey(200px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)"
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"
             }}
         className="flex items-center justify-center">
             <div className={`${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-zinc-200' : 'bg-zinc-700'} p-12 sm:p-14 md:p-20 flex  flex-col items-center justify-center rounded-lg group shadow-lg shadow-primary/40 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 transition-all duration-300`}>

@@ -12,7 +12,7 @@ export const Title = ({label}:TitleType)=> {
             style={{
             transform: isInView ? "none" : "translatey(200px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)"
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"
             }}
         className="mb-0">
                 <h2 className="text-4xl sm:text-6xl md:text-7xl inline-block md:pb-6 pb-3 font-bold">{label}</h2>

@@ -96,7 +96,7 @@ export const Contact = ()=> {
                     style={{
                     transform: isInView ? "none" : "translatex(200px)",
                     opacity: isInView ? 1 : 0,
-                    transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)"
+                    transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"
                     }} 
                     action="" 
                     className="flex-1 flex flex-col gap-4">

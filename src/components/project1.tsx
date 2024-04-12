@@ -14,7 +14,7 @@ export const Project1 = ({body,src,title,site,code,blockCode}:ProjectType)=> {
             style={{
             transform: isInView ? "none" : "translatey(200px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)"
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"
             }}
         className={`w-full h-full flex justify-center gap-6 p-6 ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-zinc-200' : 'bg-zinc-700'} rounded-xl shadow-xl transition-all duration-300`}>
                 

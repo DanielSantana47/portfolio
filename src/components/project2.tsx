@@ -14,7 +14,7 @@ export const Project2 = ({body,src,title,site,code,blockCode}:ProjectType)=> {
         style={{
         transform: isInView ? "none" : "translatey(200px)",
         opacity: isInView ? 1 : 0,
-        transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)"
+        transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"
         }}
         className={`w-full h-full flex xl:flex-row flex-col justify-center gap-6 p-3 md:p-6 ${darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null ? 'bg-zinc-200' : 'bg-zinc-700'} rounded-xl shadow-xl transition-all duration-300`}>
                 <a href={site} target="_blank" className={`flex-1 flex items-center rounded-xl overflow-hidden`}>

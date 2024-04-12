@@ -12,7 +12,7 @@ export const ContactIcon = ({icon, link}: IconType)=> {
             style={{
             transform: isInView ? "none" : "translatex(-50px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 2s cubic-bezier(0.17, 0.55, 0.55, 1)"
+            transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"
             }}
         href={link} className='sm:text-5xl text-3xl'>
             {icon}
