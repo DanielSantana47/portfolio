@@ -20,7 +20,7 @@ export const Header = ()=> {
             opacity: isInView ? 1 : 0,
             transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1)"
             }}
-            className="max-w-[1450px] w-full h-full flex flex-col justify-center mt-10 sm:mt-16">
+            className="max-w-[1450px] w-full h-full xl:h-screen flex flex-col justify-center mt-10 sm:mt-16 xl:mt-0">
                 <span className="text-primary font-bold text-lg sm:text-2xl lg:text-2xl">Olá, sou Daniel</span>
                 <div className="flex xl:flex-row flex-col justify-between">
                     <div className="flex-1">
