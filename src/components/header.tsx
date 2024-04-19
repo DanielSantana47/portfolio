@@ -22,9 +22,9 @@ export const Header = ()=> {
             }}
             className="max-w-[1450px] w-full h-full xl:h-screen flex flex-col justify-center mt-10 sm:mt-16 xl:mt-0">
                 <span className="text-primary font-bold text-lg sm:text-2xl lg:text-2xl">Olá, sou Daniel</span>
-                <div className="flex xl:flex-row flex-col justify-between">
+                <div className="flex xl:flex-row flex-col justify-between items-center">
                     <div className="flex-1">
-                        <h1 className="text-4xl text-center mx-auto sm:text-7xl md:text-8xl font-bold mt-4 lg:max-w-[50vw] max-w-max">Desenvolvedor <br/>Front-End</h1>
+                    <h1 className="text-4xl text-center mx-auto sm:text-7xl md:text-8xl font-bold mt-4 lg:max-w-[50vw] max-w-max">Desenvolvedor <br/>Front-End</h1>
                         <p className=" max-w-max mt-8 text-center md:text-lg lg:px-10 text-sm font-light">Minha verdadeira paixão é a criação de interfaces amigáveis e funcionais. Estou comprometido em aprimorar minhas habilidades, mantendo-me atualizado com as últimas tendências no desenvolvimento web. Estou empolgado para contribuir em projetos desafiadores, aplicando tanto meu conhecimento acadêmico quanto prático para criar experiências de usuário excepcionais em <b className="font-bold">React</b>. Atualmente estou cursando Sistemas de informação, realizo trbalhos freelancer e estou estudando <b className="font-bold">Next</b>.</p>
                         <div className="text-4xl md:text-6xl mt-6 md:mt-8 flex justify-center md:gap-14 gap-6">
                             <a href="https://github.com/DanielSantana47" target="_blank" className="hover:scale-125 transition-all duration-300 hover:text-primary">
