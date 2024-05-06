@@ -24,10 +24,10 @@ export const Nav = ()=> {
                         <a href="#contact" className="hover:text-primary hover:pb-4 transition-all duration-300">Contato</a>
                     </ul>
                     <div onClick={()=>darkModeCtx?.setDarkMode(!darkModeCtx.darkMode)}>
-                        {darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null && 
+                        {darkModeCtx?.darkMode == false && darkModeCtx.darkMode !== null && 
                             <FaMoon className="text-2xl sm:text-3xl hover:text-primary hover:-rotate-90 transition-all duration-300 cursor-pointer"/>
                         }
-                        {darkModeCtx?.darkMode == false && darkModeCtx.darkMode !== null && 
+                        {darkModeCtx?.darkMode == true && darkModeCtx.darkMode !== null && 
                             <IoSunny className="text-2xl sm:text-3xl hover:text-primary hover:-rotate-90 transition-all duration-300 cursor-pointer"/>
                         }
                     </div>
