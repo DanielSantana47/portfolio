@@ -8,6 +8,8 @@ export const Projects = ()=> {
             <div className="max-w-[1450px] w-full flex flex-col justify-start">
                 <Title label="Projetos"/> 
                 <div className="w-creen h-full flex-col justify-center items-stretch mb-20 pt-16 gap-16 hidden xl:flex">
+                    <Project2 code="https://github.com/DanielSantana47/web-store" site="https://web-store-react.netlify.app" title="Loja virtual" body="Projeto pessoal realizado para praticar o desenvolvimento de plataformas de vendas online, visando proporcionar uma experiência de compra rápida e otimizada para o usuário final." src="https://i.im.ge/2024/06/28/VoQXJK.image.png"/>
+                    
                     <Project1 code="https://github.com/DanielSantana47/insurance-company?tab=readme-ov-file" site="https://security-company-react.netlify.app" title="Empresa de segurança" body="Projeto pessoal dedicado ao aprimoramento das habilidades em desenvolvimento de páginas web, com foco na integração de bibliotecas externas para oferecer uma experiência de usuário aprimorada." src="https://i.im.ge/2024/05/06/ZW6rYJ.image.png"/>
                     
                     <Project2 blockCode={true} site="https://flexsolucoes.com" title="Site corporativo" body="Trabalho realizado como freelancer para uma empresa do Rio de janeito do setor financeiro, com o propósito de promover seus serviços por meio de um website. O objetivo era ampliar as opções de comunicação e aprimorar a experiência dos clientes." src="https://i.im.ge/2024/01/11/3Ei6zP.image.png"/>
@@ -21,6 +23,10 @@ export const Projects = ()=> {
                 </div>
 
                 <div className="w-creen h-full flex-col justify-center items-stretch mb-20 pt-16 gap-16 flex xl:hidden">
+                    <Project2 code="https://github.com/DanielSantana47/web-store" site="https://web-store-react.netlify.app" title="Loja virtual" body="Projeto pessoal realizado para praticar o desenvolvimento de plataformas de vendas online, visando proporcionar uma experiência de compra rápida e otimizada para o usuário final." src="https://i.im.ge/2024/06/28/VoQXJK.image.png"/>
+
+                    <Project2 code="https://github.com/DanielSantana47/insurance-company?tab=readme-ov-file" site="https://security-company-react.netlify.app" title="Empresa de segurança" body="Projeto pessoal dedicado ao aprimoramento das habilidades em desenvolvimento de páginas web, com foco na integração de bibliotecas externas para oferecer uma experiência de usuário aprimorada." src="https://i.im.ge/2024/05/06/ZW6rYJ.image.png"/>
+
                     <Project2 blockCode={true} site="https://flexsolucoes.com" title="Site corporativo" body="Trabalho realizado como freelancer para uma empresa do Rio de janeito do setor financeiro, com o propósito de promover seus serviços por meio de um website. O objetivo era ampliar as opções de comunicação e aprimorar a experiência dos clientes." src="https://i.im.ge/2024/01/11/3Ei6zP.image.png"/>
 
                     <Project2 code="https://github.com/DanielSantana47/hiking-website" site="https://web-template-react.netlify.app" title="Guia para trilhas" body="Projeto independente criado com o propósito de aperfeiçoar as competências no campo do desenvolvimento de páginas web, focando tanto no aspecto de front-end quanto na responsividade, com o objetivo de proporcionar uma experiência de usuário de alta qualidade." src="https://i.im.ge/2024/01/11/3EikYz.43ab134a-b84b-4ca7-97d1-cd2fcd7d396f.jpg"/>
