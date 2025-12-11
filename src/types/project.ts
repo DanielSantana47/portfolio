@@ -1,8 +1,10 @@
 export type ProjectType = {
+    id: number,
     title: string,
     body: string,
     src: string,
-    site: string,
+    site?: string,
     code?: string,
-    blockCode?: boolean
+    blockCode?: boolean,
+    techs: string[]
 }

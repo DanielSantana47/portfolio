@@ -1,5 +1,5 @@
 import { Title } from "./title"
-import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FaPhoneSquareAlt } from "react-icons/fa";
@@ -39,17 +39,16 @@ export const Contact = ()=> {
         })
     }
     return(
-        <section 
-        id="contact" className="w-creen h-full flex flex-col justify-center items-center p-5">
+        <section id="contact" className="w-creen h-full flex flex-col justify-center items-center p-5 mb-12">
             <div
             className="max-w-[1450px] w-full h-full flex flex-col justify-center">
                 <Title label="Contato"/>
                 <div className="mt-20 h-full justify-center lg:flex hidden">
                     <div className="flex mb-10 lg:mb-0 lg:flex-col justify-center gap-12 text-primary flex-1">
                         <ContactIcon link="https://wa.me/5581987778016" icon={<FaWhatsapp className='hover:scale-125 transition-all duration-300'/>}/>
-                        <ContactIcon link="https://www.linkedin.com/in/daniel-santana-5647792aa/" icon={<FaLinkedin className='hover:scale-125 transition-all duration-300'/>}/>
+                        <ContactIcon link="https://www.linkedin.com/in/danielsantanadev/" icon={<FaLinkedin className='hover:scale-125 transition-all duration-300'/>}/>
                         <ContactIcon link="mailto:danielsantanachastel@hotmail.com" icon={<SiGmail className='hover:scale-125 transition-all duration-300'/>}/>
-                        <ContactIcon link="tel:+5581987778016" icon={<FaPhoneSquareAlt className='hover:scale-125 transition-all duration-300'/>}/>
+                        <ContactIcon link="https://github.com/DanielSantana47" icon={<FaGithub className='hover:scale-125 transition-all duration-300'/>}/>
                     </div>
                     <form
                     onSubmit={sendEmail}

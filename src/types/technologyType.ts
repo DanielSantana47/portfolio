@@ -1,6 +1,8 @@
 import { ReactNode } from "react"
 
-export type TechBoxType = {
+export type TechnologyType = {
+    id: number,
     icon: string,
     label: string,
+    show: boolean
 }

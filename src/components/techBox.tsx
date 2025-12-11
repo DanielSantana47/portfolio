@@ -1,5 +1,5 @@
 import { DarkMode } from "@/context/darkMode";
-import { TechBoxType } from "@/types/techBoxType";
+import { TechBoxType } from "@/types/technologyType";
 import { useInView } from "framer-motion";
 import { useContext, useRef } from "react";
 

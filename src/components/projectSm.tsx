@@ -1,9 +1,10 @@
 import { DarkMode } from "@/context/darkMode"
+import { technologiesData } from "@/data/technologies"
 import { ProjectType } from "@/types/project"
 import { useInView } from "framer-motion"
 import { useContext, useRef } from "react"
 
-export const Project2 = ({body,src,title,site,code,blockCode}:ProjectType)=> {
+export const ProjectSm = ({body,src,title,site,code,blockCode,techs}:ProjectType)=> {
     const darkModeCtx = useContext(DarkMode)
     const ref = useRef(null)
     const isInView = useInView(ref, {once: false})
@@ -24,10 +25,13 @@ export const Project2 = ({body,src,title,site,code,blockCode}:ProjectType)=> {
                     <h3 className="md:text-5xl sm:text:4xl text-3xl font-semibold mb-8">{title}</h3>
                     <p className="md:text-lg sm:text-md text-sm font-light mb-6">{body}</p>
                     <div className="flex gap-4 md:gap-8 mb-6">
-                        <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
-                        <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>
-                        <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"/>
-                        <img className="w-10 hover:scale-125 transition-all duration-300" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"/>
+                        {technologiesData.map((item)=> (((item.show && techs.includes(item.label) &&
+                            <img className="w-10 hover:scale-125 transition-all duration-300"
+                                key={item.id} 
+                                src={item.icon}
+                            />
+                        )
+                        )))}
                     </div>
                     <div className="flex md:flex-row flex-col items-center md:gap-8 gap-4 mb-5 md:mb-10">
                         <a href={code} target="_blank" className={`md:w-32 w-full py-2 flex ${blockCode == true ? 'hidden' : ''} justify-center items-center text-xl ${darkModeCtx?.darkMode == true ? 'bg-zinc-800 text-white' : 'bg-zinc-200 text-black hover:text-white'} rounded-md shadow-lg  shadow-black/30 font-semibold hover:bg-primary hover:scale-110 hover:shadow-xl hover:shadow-black/20 transition-all duration-300`}>

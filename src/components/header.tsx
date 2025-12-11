@@ -25,12 +25,12 @@ export const Header = ()=> {
                 <div className="flex xl:flex-row flex-col justify-between items-center">
                     <div className="flex-1">
                     <h1 className="text-4xl text-center mx-auto sm:text-7xl md:text-8xl font-bold mt-4 lg:max-w-[50vw] max-w-max">Desenvolvedor <br/>Front-End</h1>
-                        <p className=" max-w-max mt-8 text-center md:text-lg lg:px-10 text-sm font-light">Minha verdadeira paixão é a criação de interfaces amigáveis e funcionais. Estou comprometido em aprimorar minhas habilidades, mantendo-me atualizado com as últimas tendências no desenvolvimento web. Estou empolgado para contribuir em projetos desafiadores, aplicando tanto meu conhecimento acadêmico quanto prático para criar experiências de usuário excepcionais em <b className="font-bold">React</b>. Atualmente estou cursando Sistemas de informação, realizo trbalhos freelancer e estou estudando <b className="font-bold">Next</b>.</p>
+                        <p className=" max-w-max mt-8 text-center md:text-lg lg:px-10 text-sm font-light">Sou um apaixonado por tecnologia, principalmente pela parte de desenvolvimento Web, que se mostra um campo muito vasto de oportunidades. Estou empolgado para contribuir em projetos desafiadores, aplicando tanto meu conhecimento acadêmico quanto prático para criar boas experiências para os usuários. Atualmente estou cursando Sistemas de informação, e por meio de cursos estou estudando tanto a área de frontend com <b className="font-bold">ReactJS</b> e <b className="font-bold">NextJS</b> quanto a área de backend com <b className="font-bold">NodeJS</b> e <b className="font-bold">SQL</b>.</p>
                         <div className="text-4xl md:text-6xl mt-6 md:mt-8 flex justify-center md:gap-14 gap-6">
                             <a href="https://github.com/DanielSantana47" target="_blank" className="hover:scale-125 transition-all duration-300 hover:text-primary">
                                 <FaGithub />
                             </a>
-                            <a href="https://www.linkedin.com/in/daniel-santana-5647792aa/" target="_blank" className="hover:scale-125 transition-all duration-300 hover:text-primary">
+                            <a href="https://www.linkedin.com/in/danielsantanadev/" target="_blank" className="hover:scale-125 transition-all duration-300 hover:text-primary">
                                 <FaLinkedin />
                             </a>
                         </div>                   
