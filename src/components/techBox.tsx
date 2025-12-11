@@ -1,9 +1,9 @@
 import { DarkMode } from "@/context/darkMode";
-import { TechBoxType } from "@/types/technologyType";
+import { TechnologyType } from "@/types/technologyType";
 import { useInView } from "framer-motion";
 import { useContext, useRef } from "react";
 
-export const TechBox = ({icon, label}: TechBoxType)=> {
+export const TechBox = ({icon, label}: TechnologyType)=> {
     const darkModeCtx = useContext(DarkMode)
     const ref = useRef(null)
     const isInView = useInView(ref, {once: false})

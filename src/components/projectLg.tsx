@@ -24,7 +24,7 @@ export const ProjectLg = ({body,src,title,site,code,blockCode,techs}:ProjectType
                     <p className="text-lg mb-6 font-light">{body}</p>
                     <div className="flex gap-8 mb-6">
                         {technologiesData.map((item)=> ((
-                            (item.show && techs.includes(item.label) &&
+                            (techs.includes(item.label) &&
                                 <img className="w-10 hover:scale-125 transition-all duration-300"
                                 key={item.id} 
                                 src={item.icon}
