@@ -22,7 +22,7 @@ export const projectsData: ProjectType[] = [
         id: 1,
         title: "Empresa de segurança",
         body: "Projeto pessoal dedicado ao aprimoramento das habilidades em desenvolvimento de páginas web, com foco na integração de bibliotecas externas para oferecer uma experiência de usuário aprimorada.",
-        src: "https://i.im.ge/2024/05/06/ZW6rYJ.image.png",
+        src: "https://i.im.ge/2024/05/06/ZWwBy0.image.png",
         site: "https://security-company-react.netlify.app",
         code: "https://github.com/DanielSantana47/insurance-company",
         techs: ['Typescript', 'ReactJS', 'TailwindCSS', 'NextJS']
